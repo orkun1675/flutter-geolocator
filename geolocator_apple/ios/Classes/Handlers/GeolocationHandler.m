@@ -137,7 +137,7 @@ double const kMaxLocationLifeTimeInSeconds = 5.0;
   self.listenerResultHandler = nil;
 }
 
-- (BOOL)isListeningForPositionUpdates {
+- (BOOL)listeningForPositionUpdates {
     return self.isListeningForPositionUpdates;
 }
 
