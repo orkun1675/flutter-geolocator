@@ -1,3 +1,7 @@
+## 13.1.0
+
+- Adds updatePositionStream API for changing parameters while a position stream is running.
+
 ## 13.0.1
 
 - Resolves problems when compiling non-web platforms because of illegal reference to `dart:js_interop`.
