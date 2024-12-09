@@ -1,6 +1,7 @@
 ## 13.1.0
 
-* Position update stream may now throw `LocationSignalLostException` when GPS signal is lost. This new exception is safe to catch & ignore.
+- Position update stream may now throw `LocationSignalLostException` when GPS signal is lost. This new exception is safe to catch & ignore.
+- Adds updatePositionStream API for changing parameters while a position stream is running.
 
 ## 13.0.2
 

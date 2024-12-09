@@ -1,14 +1,19 @@
 package com.baseflow.geolocator.errors;
 
+import androidx.annotation.NonNull;
+
 public enum ErrorCodes {
   activityMissing,
   errorWhileAcquiringPosition,
   locationServicesDisabled,
   locationSignalLost,
+  locationSubscriptionInactive,
   permissionDefinitionsNotFound,
   permissionDenied,
   permissionRequestInProgress;
 
+  @NonNull
+  @Override
   public String toString() {
     switch (this) {
       case activityMissing:
@@ -19,6 +24,8 @@ public enum ErrorCodes {
         return "LOCATION_SERVICES_DISABLED";
       case locationSignalLost:
         return "LOCATION_SIGNAL_LOST";
+      case locationSubscriptionInactive:
+        return "LOCATION_SUBSCRIPTION_INACTIVE";
       case permissionDefinitionsNotFound:
         return "PERMISSION_DEFINITIONS_NOT_FOUND";
       case permissionDenied:
@@ -40,6 +47,8 @@ public enum ErrorCodes {
         return "Location services are disabled. To receive location updates the location services should be enabled.";
       case locationSignalLost:
         return "Location signal has been lost. Further location updates are unlikely until something changes with the device's settings or environment.";
+      case locationSubscriptionInactive:
+        return "No active location stream subscription found.";
       case permissionDefinitionsNotFound:
         return "No location permissions are defined in the manifest. Make sure at least ACCESS_FINE_LOCATION or ACCESS_COARSE_LOCATION are defined in the manifest.";
       case permissionDenied:

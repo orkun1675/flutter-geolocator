@@ -1,6 +1,7 @@
 ## 4.3.0
 
-* Adds `LocationSignalLostException` which can be thrown when GPS signal is lost.
+- Adds `LocationSignalLostException` which can be thrown when GPS signal is lost.
+- Adds `updatePositionStream` API.
 
 ## 4.2.4
 
